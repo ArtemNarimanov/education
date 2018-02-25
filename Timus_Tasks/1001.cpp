@@ -1,15 +1,16 @@
 #include <stdio.h> 
 #include <math.h>
  
-double v[128 * 1024];
+double buf[128 * 1024];
 int main()
 {
     int i = 0;
     unsigned long long n; 
     while (scanf("%llu", &n) != EOF) {
-        v[i ++] = (double)sqrt(n * 1.0);
+        buf[i ++] = (double)sqrt(n * 1.0);
     }
     for (; --i >= 0; ) {
-        printf("%.4lf\n", v[i]); 
+        printf("%.4lf\n", buf[i]); 
+    }
     return 0;
 }
