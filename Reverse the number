@@ -1,0 +1,27 @@
+#include <iostream>
+#include <math.h>
+using namespace std;
+
+int main()
+{
+	int number, index=0,n1;
+	cin >> number;
+	n1 = number;
+	while (number > 0) 
+	{
+		number = number / 10;
+		index++;
+
+	}
+	for (int i = 0; i < index; i++) {
+		
+		int a1 = n1 % 10;
+		n1 = n1 / 10;
+		cout << a1;
+
+
+	}
+	system("pause");
+    return 0;
+}
+
