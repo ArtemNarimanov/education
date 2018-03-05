@@ -1,0 +1,19 @@
+#include <iostream>
+using namespace std;
+
+int main()
+{
+	    int output = 0;
+    long colors[4];
+    for(int k = 0; k < 4; k++)
+    {
+   cin >> colors[0]>>colors[1]>>colors[2]>>colors[3];
+    	
+    }
+
+    if(colors[1] == colors[0]){output=output+1;}
+    if(colors[2] == colors[0] || colors[2] == colors[1]){output=output+1;}
+    if(colors[3] == colors[0] || colors[3] == colors[1] || colors[3] == colors[2]){output=output+1;}
+   cout<<output;
+    return 0;
+}
